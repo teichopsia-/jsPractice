@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JS Practice Three</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- NOT WORKING  - SCRIPTS WORK IF PLACED AT BOTTOM
+    <script type="text/javascript" src="js/jsPracticeThree.js"></script>
+        -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="js/jsPracticeThree.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About me</a>
+        <a href="contact.html">Contact me</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Image Gallery</h1>
+
+      <section class="row">
+        <figure class="col-md-3">
+          <!-- add id to images to use with scrollbar script -->
+          <img id="image1" class="crop-img" src="images/img_1.jpg" alt="Graffittied Building">
+          <figcaption>Building with Graffiti</figcaption>
+        </figure>
+
+        <figure class="col-md-3">
+          <img id="image2" class="crop-img" src="images/img_3.jpg" alt="display of cheese">
+          <figcaption>Display of Cheese in a supermarket</figcaption>
+        </figure>
+
+        <figure class="col-md-3">
+          <img id="image3" class="crop-img" src="images/img_4.jpg" alt="synethesizer workshop">
+          <figcaption>A messy synthesizer workshop</figcaption>
+        </figure>
+
+        <figure class="col-md-3">
+          <img id="image4" class="crop-img" src="images/img_5.jpg" alt="City Night">
+          <figcaption>City lights and night</figcaption>
+        </figure>
+      </section>
+
+      <section class="row">
+        <button id="backward" class="col-md-1">&lt;</button>
+        <span class="col-md-10">
+          <img id="bigImage" class="large-img" src="images/img_1.jpg" alt="graffittied building">
+        </span>
+        <button id="forward" class="col-md-1">&gt;</button>
+      </section>
+    </main>
+<!--
+    <script>
+    $(".crop-img").click(function(){
+      $("#bigImage").attr('src', $(this).attr('src'));
+    });
+    </script>
+-->
+  </body>
+</html>
